@@ -5,7 +5,7 @@ const bodyParser = require('body-parser');
 const app = express();
 const PORT = 3000;
 
-mongoose.connect('mongodb+srv://carlossv:Carlos3130@cluster0.brkkvx2.mongodb.net/?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('mongodb+srv://carlossv:Carlos3130@cluster0.brkkvx2.mongodb.net/', { useUnifiedTopology: true });
 
 const ChatSchema = new mongoose.Schema({
   category: String,
