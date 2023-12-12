@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #chat-header h1 {
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        #chat-header p {
+            color: #555; /* Cambiado a un tono más opaco */
+            font-style: normal; /* Eliminada la cursiva */
+        }
+        
+        .bot-message {
+            background-color: #008080; /* Cambia a negro */
+            color: #fff; /* Texto blanco para mayor contraste */
+        }
+    </style>
+    <title>ECOBOT - Tu Asistente de Ventas Ecológicas</title>
+</head>
+<body>
+    <div id="chat-container">
+        <div id="chat-header">
+            <h1>ECOBOT</h1>
+            <p>Tu asistente de ventas ecológicas de paneles solares y multiplexores</p>
+        </div>
+        <div id="chat-display"></div>
+        <div id="user-input">
+            <input type="text" id="message-input" placeholder="Escribe tu mensaje...">
+            <button id="send-button">➔ Enviar</button>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
