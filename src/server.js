@@ -17,6 +17,11 @@ const ChatModel = mongoose.model('Chat', ChatSchema);
 
 app.use(bodyParser.json());
 
+// Ruta de comprobación de salud
+app.get('/health', (req, res) => {
+  res.status(200).send('OK');
+});
+
 app.post('/ask', async (req, res) => {
   const userMessage = req.body.message.toLowerCase();
 
@@ -51,3 +56,4 @@ app.post('/ask', async (req, res) => {
 app.listen(PORT, () => {
   console.log(`Servidor en ejecución en http://localhost:${PORT}`);
 });
+
